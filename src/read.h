@@ -17,19 +17,20 @@
 // FastqRead represents a fastq read
 class FastqRead
 {
-    public:
-    std::string readname; // the read name
-    std::string sequence; // the sequence
-    std::string plusline; // the + line (?)
-    std::string quality; // quality score line
+public:
+    std::string readname;  // the read name
+    std::string sequence;  // the sequence
+    std::string plusline;  // the + line (?)
+    std::string quality;   // quality score line
 
     // Constructor
-    FastqRead(const std::string& name, const std::string& seq,
-    const std::string& plus, const std::string& qual);
+    FastqRead(const std::string& name,
+              const std::string& seq,
+              const std::string& plus,
+              const std::string& qual);
 
     // Destructor
     virtual ~FastqRead() {};
-
 };
 
 #endif
